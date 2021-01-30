@@ -43,6 +43,13 @@
                 <br>
                 <br>
                 <form action="{{ url_for('handle_data') }}" method="post">
+                    Please enter your name: <input type = "text" name="clientname" placeholder="Your name"> <br>
+                    Please enter your e-mail: <input type = "text" name="email" placeholder="Your email"> <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    
                     <b>Please enter the desired product description (type, brand, max/min price)</b>
                     <br>
                     <textarea rows = "5" cols = "60" name = "description">
@@ -50,8 +57,7 @@
                     <br>
                     <br>
 
-                    <label for="myfile">Upload an image of your space:</label>
-                    <br>
+                    <label for="myfile">Upload image of your space:</label>
                     <input type="file" id="myfile" name="myfile">
                     <br>
                     <br>
