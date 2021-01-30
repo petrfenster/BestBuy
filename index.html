@@ -28,32 +28,25 @@
                 <br>
                 <br>
                 <br>
-                <b>if you wish to know more about a particular item we encourage you to visit one of our group</b>
-                <b>information sessions by clicking this button</b>
-                <br>
+                <b>If you wish to know more about a particular item, we encourage you to visit one of our group</b>
+                <b>information sessions</b>
                 <br>
                 <br>
 
                 <form action="/my/link/location" method="get">
-                    <input type="submit" value="Redirect me"
+                    <input type="submit" value="Redirect me to group session information"
                     name="Submit" id="frm1_submit" />
                 </form>
-
-
                 <br>
                 <br>
-                <b>Otherwise, please fill in the following form:</b>
-
+                <b>For private sessions, please fill in the following form:</b>
+                <br>
+                <br>
                 <form action="{{ url_for('handle_data') }}" method="post">
                     <b>Please enter the desired product description (type, brand, max/min price)</b>
                     <br>
-                    <br>
                     <textarea rows = "5" cols = "60" name = "description">
                     </textarea><br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
                     <br>
                     <br>
 
@@ -62,9 +55,8 @@
                     <br>
                     <br>
                     <br>
-
                     <b>Choose a time slot for your appointment</b>
-
+                    <br>
                     <label for="date">Date:</label>
 
                     <select name="date" id="date">
