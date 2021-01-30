@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>BestBuy</title>
+        <title>Natural Disaster Tracker</title>
         <style>
      body {background-image: url('bestbuy5.jpg');
 }
@@ -15,15 +15,49 @@
     </style>
      </head>
 
-<header>
-  <h1 style="color: red;">Natural Disaster Tracker</h1>
-</header>
 
     <body>
+
+                <br>
+                <br> 
+                <br> 
+                <br> 
+                <br> 
+                <br> 
+                <br> 
+                <br> 
+                <br> 
+                <br> 
+                <br> 
+                <br>
+                <b>if you wish to know more about a particular item we encourage you to visit one of our group</b>
+                <b>information sessions by clicking this button</b>
+                <br>
+                <br>
+                <br>
+
+                <form action="/my/link/location" method="get">
+                    <input type="submit" value="Redirect me" 
+                    name="Submit" id="frm1_submit" />
+                </form>
+
+               
+                <br>
+                <br>
+                <b>Otherwise, please fill in the following form:</b>
+
                 <form action="{{ url_for('handle_data') }}" method="post">
-
-                    <input type = "text" name="lattitude" placeholder="Lattitude">
-
+                    <b>Please enter the desired product description (type, brand, max/min price)</b> 
+                    <br>
+                    <br>
+                    <textarea rows = "5" cols = "60" name = "description">
+                    </textarea><br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
                     <input type = "text" name="longtitude" placeholder="Longitude"> <br>
 
                     <input type="radio" id="drought" name="eventId" value=6>
@@ -73,7 +107,7 @@
 
                     <input type="submit">
 
-
+                     
 
                 </form>
 
