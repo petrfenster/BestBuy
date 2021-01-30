@@ -3,43 +3,56 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+</head>
+<style>
+  body {
+      font-size: 16px;
+      font-family: Heebo;
+    }
+    form {
+        font-size: 16px;
+        font-family: Heebo;
+      }
+</style
 
 
     <body>
 
-        <img src=bb-banner.jpeg width="1485" height="165"> 
+        <img src=bb-banner.jpeg width="1485" height="165">
 
                 <br>
-                <br> 
-                <br> 
-                <br> 
-                <br> 
-                <br> 
-                <br> 
-                <br> 
-                <br> 
-                <br> 
-                <br> 
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
                 <br>
                 <b>if you wish to know more about a particular item we encourage you to visit one of our group</b>
                 <b>information sessions by clicking this button</b>
                 <br>
                 <br>
                 <br>
-            
+
                 <form action="/my/link/location" method="get">
-                    <input type="submit" value="Redirect me" 
+                    <input type="submit" value="Redirect me"
                     name="Submit" id="frm1_submit" />
                 </form>
-               
-               
+
+
                 <br>
                 <br>
                 <b>Otherwise, please fill in the following form:</b>
 
                 <form action="{{ url_for('handle_data') }}" method="post">
-                    <b>Please enter the desired product description (type, brand, max/min price)</b> 
+                    <b>Please enter the desired product description (type, brand, max/min price)</b>
                     <br>
                     <br>
                     <textarea rows = "5" cols = "60" name = "description">
@@ -63,7 +76,7 @@
                     <option value="February 5, Friday">February 5, Friday</option>
                     <option value="February 6, Saturday">February 6, Saturday</option>
                     <option value="February 7, Sunday">February 7, Sunday</option>
-                    
+
                     </select>
 
                     <label for="Time">Time:</label>
@@ -74,9 +87,9 @@
                     <option value="12AM-2PM">12AM-2PM</option>
                     <option value="2PM-4PM">2PM-4PM</option>
                     <option value="4PM-6PM">4PM-6PM</option>
-                    
+
                     </select>
-            
+
 
                     <input type="submit">
 
@@ -84,7 +97,7 @@
                     <br>
                     <br>
 
-                     
+
 
                 </form>
 
